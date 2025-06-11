@@ -1,0 +1,41 @@
+#include <Arduino.h>
+#include <ezTime.h>
+#include "internet.h"
+
+Timezone tempo;
+
+void setup() {
+    Serial.begin(9600);
+    conectaWiFi();
+    waitForSync();
+    tempo.setLocation("America/Sao_Paulo");
+}
+
+void loop() {
+    
+    
+    checkWiFi();
+    Serial.println(tempo.dateTime());
+    Serial.println(tempo.day()); 
+    Serial.println(tempo.month()); 
+    Serial.println(tempo.year());
+    Serial.println(tempo.yearISO());
+    Serial.println(tempo.dayOfYear());
+    Serial.println(tempo.hour());
+    Serial.println(tempo.minute());
+    Serial.println(tempo.second());
+    Serial.println(tempo.ms());
+    Serial.println(tempo.hourFormat12());
+    Serial.println(tempo.getPosix());
+    Serial.println(tempo.isAM());
+    Serial.println(tempo.isPM());
+    Serial.println(tempo.weekday());
+    Serial.println(tempo.now());
+    Serial.println("_____________________");
+    delay(5000);
+
+    
+
+
+}
+

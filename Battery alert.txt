@@ -1,0 +1,22 @@
+// Autor: Rafael Nunes
+// Objetivo: Criar um programa que indica se a bateria está entre 20% e 80%..
+int bateria = 40;
+void setup()
+{
+  pinMode(13,OUTPUT);
+  
+  if(bateria <80 & bateria >20){
+    digitalWrite(13,HIGH);}
+  else if(bateria >80 || bateria <20){
+    digitalWrite(13,LOW);}
+  
+  
+}
+  
+ void loop ()
+ {
+    
+    
+
+
+ }
