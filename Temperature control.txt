@@ -6,21 +6,21 @@ void setup()
 {
 int temperature = 20;
 
-pinMode(pinLed,OUTPUT);
+pinMode(pinLed, OUTPUT);
   
   
-  if(temperatura>30){
-    digitalWrite(pinLed,HIGH);}
+  if(temperature>30)
+    digitalWrite(pinLed, HIGH);
     
     
  
-   else{
-     digitalWrite(pinLed,LOW);}
+   else
+     digitalWrite(pinLed, LOW);
      
 }
  
-  void loop ()
-  {
+void loop ()
+{
 
 
   
@@ -32,10 +32,4 @@ pinMode(pinLed,OUTPUT);
   
   
   
-  
-  
-  
-  
-  
-  
-  }
+ }
