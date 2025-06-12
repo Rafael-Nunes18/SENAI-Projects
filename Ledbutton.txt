@@ -14,7 +14,7 @@ void setup()
 void loop()
 {
 
-  bool CurrentStatebutton = digitalRead(pinButton);
+  bool CurrentStatebutton = analogRead(pinButton);
   static bool stateLed;
   static bool previousStatebutton;
   if (CurrentStatebutton == 1 && previousStatebutton == 0)
