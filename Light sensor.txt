@@ -10,7 +10,6 @@ void setup() {
 
 }
 
-
 void loop() {
   int sensorLDR = analogRead(pinSensor);
   Serial.println(sensorLDR);
