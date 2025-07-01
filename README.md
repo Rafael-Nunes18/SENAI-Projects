@@ -3,10 +3,12 @@ Project i collaborated:
 
 
 
-he contains a:
+he contains:
+
+-ESP 32
 
 -Light Sensor
 
 -Moviment Sensor
 
--Pressure Sensor
+-Pressure Sensor(with amplifacator of voltage and signal)
