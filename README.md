@@ -3,3 +3,7 @@ Project i collaborated:
 
 
 
+he contains a:
+-Light Sensor
+-Moviment Sensor
+-Pressure Sensor
