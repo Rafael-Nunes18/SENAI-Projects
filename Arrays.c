@@ -1,21 +1,15 @@
 #include <Arduino.h>
 
 int pinLeds[5] = {2,3,4,5,6};
-
+int i;
 
 
 void setup()
 {
-  
-pinMode(pinLeds[0],OUTPUT);
-pinMode(pinLeds[1],OUTPUT);
-pinMode(pinLeds[2],OUTPUT);
-pinMode(pinLeds[3],OUTPUT);
-pinMode(pinLeds[4],OUTPUT);
+  for(i=0;i<5;i++)
+pinMode(pinLeds[i],OUTPUT);
 
- 
-  
-  
+
 }
 
 
@@ -23,11 +17,11 @@ pinMode(pinLeds[4],OUTPUT);
 
 void loop()
 {
-  for(int i=0;i<5;i++)
+  for(i=0;i<5;i++)
   digitalWrite(pinLeds[i],HIGH);
   delay(1000);
   
-  for(int i = 0;i<5;i++)
+  for(i=0;i<5;i++)
   digitalWrite(pinLeds[i],LOW);
   delay(1000);
   
