@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <ezTime.h>
-#include "internet.h"
+#include "WiFi.h"
 
 Timezone time;
 
